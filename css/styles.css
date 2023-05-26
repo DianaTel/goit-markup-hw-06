@@ -798,30 +798,29 @@ border: none;
 }
 
 
-.contact-form-text {
+.modal-text {
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5px;
 text-align: center;
 letter-spacing: 0.02em;
 color: #2E2F42;
-/* display: inline-block;
-margin-bottom: 16px; */
+margin-bottom: 16px;
 }
 
 .contact-form-field-wrapper,
 .contact-form-checkbox-wrapper {
 display: block;
-padding-bottom: 4px;
 
 }
 
 .contact-form-field-wrapper {
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
+    display: block;
+    margin-bottom: 4px;
 }
 
 .contact-form-input {
@@ -830,10 +829,19 @@ padding-bottom: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
 padding-left: 38px;
-margin-bottom: 8px;
-position: relative;
+background-color: transparent;
+outline: transparent; 
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.contact-form-input:focus,
+.contact-form-input:hover
+{
+    border-color: #4D5AE5; 
+}
 
+.contact-form-conteiner {
+    margin-bottom: 8px;
 }
 
 .contact-form-massege {
@@ -882,6 +890,16 @@ color: #FFFFFF;
 
 .contact-form-input-icon {
     position: absolute;
+left: 16px;
+top: 50%; 
+transform: translateY(-50%); 
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     background-color: #2E2F42;
-    display: block;
+    fill: #4D5AE5;
+}
+
+
+.contact-form-conteiner-input {
+    position: relative;
 }
