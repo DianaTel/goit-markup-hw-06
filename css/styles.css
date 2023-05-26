@@ -255,6 +255,35 @@ body {
     background-color: #31D0AA;
 }
 
+.subscribe {
+font-family: 'Roboto';
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+margin-bottom: 16px;
+}
+
+.subscribe-form {
+    display: flex;
+justify-content: space-between;
+align-items: center;
+    gap: 24px;
+}
+
+.subscribe.btn {
+letter-spacing: 0.04em;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 24px;
+gap: 16px;
+background: #4D5AE5;
+border-radius: 4px;
+}
+
 
 /* ======================== index.html ========================*/
 
