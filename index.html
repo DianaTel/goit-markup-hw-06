@@ -417,8 +417,8 @@
 
     </footer>
 
-        <!-- is-hidden -->
-    <div class="backdrop" data-modal>
+       
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="mogal-close-btn" data-modal-close>
                 <svg class="modal-close-icon" width="8" height="8">
@@ -468,13 +468,21 @@
                 </div>
 
                 <div class="checkbox-conteiner">
-                    <input type="checkbox" class="contact-form-checkbox visually-hidden" name="user-privacy"  id="user-privacy" value="true" required>
-                    <label class="contact-form-checkbox-wrapper" for="user-privacy">I accept the terms and conditions of the
+                    <input 
+                    type="checkbox" 
+                    class="contact-form-checkbox visually-hidden"
+                     name="user-privacy"  
+                     id="user-privacy" 
+                     value="true" 
+                     required />
+
+                    <label class="contact-form-checkbox-wrapper" for="user-privacy">
                         <span class="checkbox-privacy-policy">
-                             <svg class="checkbox-svg"  width="10" height="8"><use href="./images/icons.svg#icon-vectorr"> </use> </svg>
-                        </span>
+                             <svg class="checkbox-svg"  width="10" height="8">
+                                <use href="./images/icons.svg#icon-vectorr"></use>
+                            </svg>
+                        </span> I accept the terms and conditions of the
                         <a class="checkbox-policy">Privacy Policy</a></label>
-                
                 </div>
 
                 <button type="submit" class="contact-form-submit">Send</button>
