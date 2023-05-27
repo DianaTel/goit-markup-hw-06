@@ -876,6 +876,7 @@ gap: 16px; */
     color: #FFFFFF;
 
     display: block;
+    margin: 0 auto;
     cursor: pointer;
     border: none; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
@@ -933,6 +934,9 @@ fill: #4D5AE5;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
+    /* position: relative; */
+   
+    
 }
 
 .checkbox-policy {
@@ -956,11 +960,15 @@ fill: #4D5AE5;
     fill: transparent; 
     cursor: pointer;
     /* padding: 3px 4px; */
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    
 }
 
 .checkbox-svg {
    
-    fill:  #F4F4FD;
+    fill:   #ffffff;
     opacity: 0;
 }
 
@@ -973,4 +981,7 @@ fill: #4D5AE5;
 
 .contact-form-checkbox:checked + .contact-form-checkbox-wrapper>.checkbox-privacy-policy > .checkbox-svg { 
     opacity: 1;
+}
+.contact-form-checkbox:focus + .contact-form-checkbox-wrapper>.checkbox-privacy-policy {
+    border: 1px solid #404BBF;
 }
