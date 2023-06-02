@@ -267,7 +267,12 @@ body {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
+
+   
 }
+
+
+
 
 .subscribe-form {
     display: flex;
@@ -312,6 +317,13 @@ gap: 16px; */
     border-radius: 4px;
     cursor: pointer;
     border: none;
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.subscribe.btn:hover,
+.subscribe.btn:focus {
+    background-color: var(--accent-color-two);
 }
 
 .subscribe-svg {
@@ -839,6 +851,7 @@ gap: 16px; */
     border-color: #4D5AE5;
 }
 
+.contact-form-input:hover+.contact-form-input-icon,
 .contact-form-input:focus+.contact-form-input-icon {
     fill: #4D5AE5;
 }
@@ -907,9 +920,11 @@ gap: 16px; */
     border-radius: 4px;
     background-color: transparent;
     padding: 8px 16px;
+    display: block;
     outline: transparent;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 
@@ -950,6 +965,7 @@ gap: 16px; */
     justify-content: center;
     fill: transparent;
     cursor: pointer;
+    margin-right: 8px;
 }
 
 .checkbox-svg {
